@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Opinion-on-Quotes.props" />
+</Project>
