@@ -1,5 +1,74 @@
 [
   {
+    "ContainingType": "Opinion_on_Quotes.Controllers.CommentsController",
+    "Method": "AddComment",
+    "RelativePath": "api/Comments/AddComment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createCommentDto",
+        "Type": "Opinion_on_Quotes.Models.CreateCommentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Opinion_on_Quotes.Controllers.CommentsController",
+    "Method": "DeleteComment",
+    "RelativePath": "api/Comments/DeleteComment/{commentId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "commentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Opinion_on_Quotes.Controllers.CommentsController",
+    "Method": "GetCommentsForquote",
+    "RelativePath": "api/Comments/GetCommentsForQuote/{quoteId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quoteId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Opinion_on_Quotes.Controllers.CommentsController",
+    "Method": "UpdateComment",
+    "RelativePath": "api/Comments/UpdateComment/{commentId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "commentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedText",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Opinion_on_Quotes.Controllers.DramaController",
     "Method": "AddDrama",
     "RelativePath": "api/Drama/AddDrama",
@@ -106,16 +175,6 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Opinion_on_Quotes.Controllers.MoodController",
-    "Method": "Index",
-    "RelativePath": "api/Mood",
-    "HttpMethod": "",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -360,16 +419,6 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Opinion_on_Quotes.Controllers.QuoteMoodController",
-    "Method": "Index",
-    "RelativePath": "api/QuoteMood",
-    "HttpMethod": "",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   },
   {

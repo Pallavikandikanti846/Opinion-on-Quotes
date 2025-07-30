@@ -27,6 +27,9 @@ namespace Opinion_on_Quotes.Controllers
         /// GET:  https://localhost:7049/api/Mood/MoodList ->
         ///[{"mood_id":1,"type":"romantic"},{"mood_id":2,"type":"sad"},{"mood_id":3,"type":"inspirational"},{"mood_id":4,"type":"funny"},{"mood_id":5,"type":"emotional"},{"mood_id":6,"type":"hopeful"},{"mood_id":7,"type":"dark"},{"mood_id":8,"type":"mysterious"},{"mood_id":9,"type":"comforting"},{"mood_id":10,"type":"witty"}]
         /// </example>
+        /// 
+
+
         [HttpGet("MoodList")]
         public async Task<ActionResult<IEnumerable<MoodDto>>> MoodList()
         {
@@ -65,10 +68,7 @@ namespace Opinion_on_Quotes.Controllers
                 return Ok(aMood);
             }
         }
-        public IActionResult Index()
-        {
-            return View();
-        }
+     
         /// <summary>
         /// Updates a Mood
         /// </summary>

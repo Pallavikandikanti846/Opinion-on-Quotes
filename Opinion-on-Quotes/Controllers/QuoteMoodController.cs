@@ -7,7 +7,7 @@ namespace Opinion_on_Quotes.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class QuoteMoodController : Controller
+    public class QuoteMoodController : ControllerBase
     {
         private readonly IQuoteMoodServices _quoteMoodServices;
 
@@ -15,10 +15,7 @@ namespace Opinion_on_Quotes.Controllers
         {
             _quoteMoodServices = quoteMoodServices;
         }
-        public IActionResult Index()
-        {
-            return View();
-        }
+    
         /// <summary>
         /// Returns a list of quotes for a specific mood by its {type}
         /// </summary>

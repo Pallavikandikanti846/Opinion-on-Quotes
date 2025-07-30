@@ -11,7 +11,7 @@ namespace Opinion_on_Quotes.Controllers
     [ApiController]
     [Route("api/[controller]")]
 
-    public class QuoteController : Controller
+    public class QuoteController : ControllerBase
     {
         private readonly IQuoteServices _QuoteServices;
 

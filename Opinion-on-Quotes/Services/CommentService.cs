@@ -22,7 +22,7 @@ namespace Opinion_on_Quotes.Services
             if (quote == null)
             {
                 response.Status = ServiceResponse.ServiceStatus.NotFound;
-                response.Messages.Add("Topic not found.");
+                response.Messages.Add("Quote not found.");
                 return response;
             }
 
@@ -40,10 +40,28 @@ namespace Opinion_on_Quotes.Services
 
             response.Status = ServiceResponse.ServiceStatus.Created;
             response.Messages.Add("Comment added successfully.");
+
+            response.QuoteData = new QuoteDto
+            {
+                quote_id = quote.quote_id,
+                content = quote.content,
+                actor = quote.actor,
+                episode = quote.episode,
+                drama_id = quote.drama_id,
+               
+                comments = quote.Comments?
+         .OrderByDescending(c => c.CreatedAt)
+         .Select(c => new CommentDto
+         {
+             CommentText = c.CommentText,
+             CreatedAt = c.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss"),
+             UserName = c.UserId
+         }).ToList()
+            };
             return response;
         }
 
-        public async Task<IEnumerable<CommentDto>> ListCommentsByTopic(int quote_id)
+        public async Task<IEnumerable<CommentDto>> ListCommentsByQuote(int quote_id)
         {
             return await _context.Comments
                 .Where(c => c.quote_id == quote_id)
@@ -107,7 +125,7 @@ namespace Opinion_on_Quotes.Services
 
             return response;
         }
-        public async Task<IEnumerable<CommentDto>> GetCommentsForTopic(int quote_id)
+        public async Task<IEnumerable<CommentDto>> GetCommentsForQuote(int quote_id)
         {
             var comments = await _context.Comments
                 .Where(c => c.quote_id == quote_id)

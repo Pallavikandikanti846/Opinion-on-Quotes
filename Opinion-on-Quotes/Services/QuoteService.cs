@@ -20,20 +20,29 @@ namespace Opinion_on_Quotes.Services
         {
             // all Quotes
             List<Quote> Quotes = await _context.Quotes
+                 .Include(q => q.Comments)
                 .ToListAsync();
             // empty list of data transfer object QuoteDto
             List<QuoteDto> QuoteDtos = new List<QuoteDto>();
             // foreach Quote record in database
             foreach (Quote Quote in Quotes)
             {
-                // create new instance of QuoteDto, add to list
                 QuoteDtos.Add(new QuoteDto()
                 {
                     quote_id = Quote.quote_id,
                     content = Quote.content,
-                    actor=Quote.actor,
-                    episode=Quote.episode,
-                    drama_id = Quote.drama_id
+                    actor = Quote.actor,
+                    episode = Quote.episode,
+                    drama_id = Quote.drama_id,
+                    comments = Quote.Comments.Select(c => new CommentDto()
+                    {
+                        CommentId = c.CommentId,
+                        CommentText = c.CommentText,
+                        CreatedAt = c.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss"),
+                       
+                        quote_id = c.quote_id,
+                        UserName = c.UserId
+                    }).ToList()
                 });
             }
             // return QuoteDtos
@@ -46,6 +55,7 @@ namespace Opinion_on_Quotes.Services
         {
 
             var Quote = await _context.Quotes
+                 .Include(q => q.Comments)
                 .FirstOrDefaultAsync(c => c.quote_id == id);
 
             // no Quote found
