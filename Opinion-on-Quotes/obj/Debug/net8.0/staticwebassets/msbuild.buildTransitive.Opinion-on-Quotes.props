@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Opinion-on-Quotes.props" />
+</Project>
