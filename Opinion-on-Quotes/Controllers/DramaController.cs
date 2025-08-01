@@ -68,10 +68,10 @@ namespace Opinion_on_Quotes.Controllers
                 return Ok(aDrama);
             }
         }
-        public IActionResult Index()
-        {
-            return View();
-        }
+        //public IActionResult Index()
+        //{
+        //    return View();
+        //}
         /// <summary>
         /// Updates a Drama
         /// </summary>

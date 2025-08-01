@@ -5,6 +5,7 @@ namespace Opinion_on_Quotes.Models
     public class Quote
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int quote_id { get; set; }
 
         //Each quote belongs to one drama
@@ -20,6 +21,10 @@ namespace Opinion_on_Quotes.Models
         //A quote can have many moods
         [System.Text.Json.Serialization.JsonIgnore]
         public ICollection<QuoteMood>? QuoteMoods { get; set; }
+
+        //A quote can have multiple comments associated with it (1-to-many relationship)
+        public ICollection<Comment>? Comments { get; set; }
+
     }
     public class QuoteDto
     {
@@ -30,5 +35,8 @@ namespace Opinion_on_Quotes.Models
         public string? title { get; set; }
 
         public int drama_id { get; set; }
+        public List<CommentDto>? comments { get; set; }
+
+
     }
 }

@@ -11,7 +11,7 @@ namespace Opinion_on_Quotes.Models
         /// <summary>
         /// Enum representing service operation results.
         /// </summary>
-        public enum ServiceStatus { Found, NotFound, Created, Updated, Deleted, Error, Success }
+        public enum ServiceStatus { Found, NotFound, Created, Updated, Deleted, Error, Success, Forbidden }
 
         /// <summary>
         /// the result status of the operation

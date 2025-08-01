@@ -244,12 +244,9 @@ namespace Opinion_on_Quotes.Data.Migrations
                     b.Property<int>("quote_id")
                         .HasColumnType("int");
 
-                    b.Property<int>("quote_id1")
-                        .HasColumnType("int");
-
                     b.HasKey("CommentId");
 
-                    b.HasIndex("quote_id1");
+                    b.HasIndex("quote_id");
 
                     b.ToTable("Comments");
                 });
@@ -394,8 +391,8 @@ namespace Opinion_on_Quotes.Data.Migrations
             modelBuilder.Entity("Opinion_on_Quotes.Models.Comment", b =>
                 {
                     b.HasOne("Opinion_on_Quotes.Models.Quote", "Quote")
-                        .WithMany()
-                        .HasForeignKey("quote_id1")
+                        .WithMany("Comments")
+                        .HasForeignKey("quote_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -444,6 +441,8 @@ namespace Opinion_on_Quotes.Data.Migrations
 
             modelBuilder.Entity("Opinion_on_Quotes.Models.Quote", b =>
                 {
+                    b.Navigation("Comments");
+
                     b.Navigation("QuoteMoods");
                 });
 #pragma warning restore 612, 618

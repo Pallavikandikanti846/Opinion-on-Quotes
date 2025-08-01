@@ -4728,23 +4728,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kandh\\.nuget\\packages\\": {},
+    "C:\\Users\\it_fa\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\back_end2\\Assignments\\Opinion-on-Quotes\\Opinion-on-Quotes\\Opinion-on-Quotes.csproj",
+      "projectUniqueName": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Opinion-on-Quotes.csproj",
       "projectName": "Opinion-on-Quotes",
-      "projectPath": "F:\\back_end2\\Assignments\\Opinion-on-Quotes\\Opinion-on-Quotes\\Opinion-on-Quotes.csproj",
-      "packagesPath": "C:\\Users\\kandh\\.nuget\\packages\\",
-      "outputPath": "F:\\back_end2\\Assignments\\Opinion-on-Quotes\\Opinion-on-Quotes\\obj\\",
+      "projectPath": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Opinion-on-Quotes.csproj",
+      "packagesPath": "C:\\Users\\it_fa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\kandh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\it_fa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4771,7 +4771,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -4825,7 +4825,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

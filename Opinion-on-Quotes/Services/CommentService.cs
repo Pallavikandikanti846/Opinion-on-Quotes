@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Opinion_on_Quotes.Data;
 using Opinion_on_Quotes.Interfaces;
 using Opinion_on_Quotes.Models;
@@ -7,12 +8,16 @@ namespace Opinion_on_Quotes.Services
 {
     public class CommentService : ICommentService
     {
-        private readonly ApplicationDbContext _context;
+        private readonly UserManager<IdentityUser> _userManager;
 
-        public CommentService(ApplicationDbContext context)
+        private readonly ApplicationDbContext _context;
+        // dependency injection of database context
+        public CommentService(UserManager<IdentityUser> userManager, ApplicationDbContext context)
         {
+            _userManager = userManager;
             _context = context;
         }
+
 
         public async Task<ServiceResponse> AddComment(CreateCommentDto createCommentDto, string userId)
         {
@@ -22,7 +27,7 @@ namespace Opinion_on_Quotes.Services
             if (quote == null)
             {
                 response.Status = ServiceResponse.ServiceStatus.NotFound;
-                response.Messages.Add("Topic not found.");
+                response.Messages.Add("Quote not found.");
                 return response;
             }
 
@@ -40,25 +45,70 @@ namespace Opinion_on_Quotes.Services
 
             response.Status = ServiceResponse.ServiceStatus.Created;
             response.Messages.Add("Comment added successfully.");
-            return response;
-        }
 
-        public async Task<IEnumerable<CommentDto>> ListCommentsByTopic(int quote_id)
-        {
-            return await _context.Comments
-                .Where(c => c.quote_id == quote_id)
+            var commentDtos = new List<CommentDto>();
+
+            var comments = await _context.Comments
+                .Where(c => c.quote_id == quote.quote_id)
                 .OrderByDescending(c => c.CreatedAt)
-                .Select(c => new CommentDto
+                .ToListAsync();
+
+            foreach (var c in comments)
+            {
+                var user = await _userManager.FindByIdAsync(c.UserId);
+                string username = user?.UserName ?? "Anonymous";
+
+                commentDtos.Add(new CommentDto
                 {
                     CommentId = c.CommentId,
                     CommentText = c.CommentText,
                     CreatedAt = c.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss"),
-                    UserName = "Anonymous"
-                })
-                .ToListAsync();
+                    UserName = username,
+                    quote_id = c.quote_id
+                });
+            }
+
+            response.QuoteData = new QuoteDto
+            {
+                quote_id = quote.quote_id,
+                content = quote.content,
+                actor = quote.actor,
+                episode = quote.episode,
+                drama_id = quote.drama_id,
+                comments = commentDtos
+            };
+
+            return response;
         }
 
-        public async Task<ServiceResponse> DeleteComment(int commentId)
+        public async Task<IEnumerable<CommentDto>> ListCommentsByQuote(int quote_id)
+        {
+            var comments = await _context.Comments
+                .Where(c => c.quote_id == quote_id)
+                .OrderByDescending(c => c.CreatedAt)
+                .ToListAsync();
+
+            var commentDtos = new List<CommentDto>();
+
+            foreach (var comment in comments)
+            {
+                var user = await _userManager.FindByIdAsync(comment.UserId);
+                string username = user?.UserName ?? "Anonymous";
+
+                commentDtos.Add(new CommentDto
+                {
+                    CommentId = comment.CommentId,
+                    CommentText = comment.CommentText,
+                    CreatedAt = comment.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss"),
+                    UserName = username,
+                    quote_id = comment.quote_id
+                });
+            }
+
+            return commentDtos;
+        }
+
+        public async Task<ServiceResponse> DeleteComment(int commentId, string userId)
         {
             var response = new ServiceResponse();
             var comment = await _context.Comments.FindAsync(commentId);
@@ -67,6 +117,18 @@ namespace Opinion_on_Quotes.Services
             {
                 response.Status = ServiceResponse.ServiceStatus.NotFound;
                 response.Messages.Add("Comment not found.");
+                return response;
+            }
+
+            // Check if user is admin
+            var user = await _userManager.FindByIdAsync(userId);
+            var isAdmin = await _userManager.IsInRoleAsync(user, "Admin");
+
+            //  Ownership check
+            if (comment.UserId != userId && !isAdmin)
+            {
+                response.Status = ServiceResponse.ServiceStatus.Forbidden;
+                response.Messages.Add("You are not authorized to delete this comment.");
                 return response;
             }
 
@@ -78,7 +140,8 @@ namespace Opinion_on_Quotes.Services
             return response;
         }
 
-        public async Task<ServiceResponse> UpdateComment(int commentId, string newText)
+
+        public async Task<ServiceResponse> UpdateComment(int commentId, string newText, string userId)
         {
             var response = new ServiceResponse();
 
@@ -90,38 +153,56 @@ namespace Opinion_on_Quotes.Services
                 return response;
             }
 
+            // Check if user is admin
+            var user = await _userManager.FindByIdAsync(userId);
+            var isAdmin = await _userManager.IsInRoleAsync(user, "Admin");
+            //  Ownership check
+            if (comment.UserId != userId &&!isAdmin)
+            {
+                response.Status = ServiceResponse.ServiceStatus.Forbidden;
+                response.Messages.Add("You are not authorized to update this comment.");
+                return response;
+            }
+
             comment.CommentText = newText;
 
-            try
-            {
+           
                 await _context.SaveChangesAsync();
                 response.Status = ServiceResponse.ServiceStatus.Updated;
                 response.Messages.Add("Comment updated successfully.");
-            }
-            catch (Exception ex)
-            {
-                response.Status = ServiceResponse.ServiceStatus.Error;
-                response.Messages.Add("Error updating comment.");
-                response.Messages.Add(ex.Message);
-            }
+            
+            
+                          
 
             return response;
         }
-        public async Task<IEnumerable<CommentDto>> GetCommentsForTopic(int quote_id)
+        public async Task<IEnumerable<CommentDto>> GetCommentsForQuote(int quote_id)
         {
             var comments = await _context.Comments
                 .Where(c => c.quote_id == quote_id)
-                .Select(c => new CommentDto
-                {
-                    CommentId = c.CommentId,
-                    CommentText = c.CommentText,
-                    CreatedAt = c.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss"),
-                    UserName = "Anonymous"
-                })
+                .OrderByDescending(c => c.CreatedAt)
                 .ToListAsync();
 
-            return comments;
+            var commentDtos = new List<CommentDto>();
+
+            foreach (var comment in comments)
+            {
+                var user = await _userManager.FindByIdAsync(comment.UserId);
+                string username = user?.UserName ?? "Anonymous";
+
+                commentDtos.Add(new CommentDto
+                {
+                    CommentId = comment.CommentId,
+                    CommentText = comment.CommentText,
+                    CreatedAt = comment.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss"),
+                    UserName = username,
+                    quote_id = comment.quote_id
+                });
+            }
+
+            return commentDtos;
         }
+
 
     }
 }

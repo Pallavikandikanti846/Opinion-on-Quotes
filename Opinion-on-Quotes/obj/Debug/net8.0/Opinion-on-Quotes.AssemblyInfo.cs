@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Opinion-on-Quotes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+215ecc743f0747b85fa7007f25df95134d78895b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Opinion-on-Quotes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Opinion-on-Quotes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

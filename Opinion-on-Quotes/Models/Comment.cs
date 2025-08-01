@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using Opinion_on_Quotes.Models;
 
 
@@ -11,9 +12,15 @@ namespace Opinion_on_Quotes.Models
         public string? CommentText { get; set; }
         public DateTime CreatedAt { get; set; }
 
-        //A comment belongs to one topic
-
+        
+        /// <summary>
+        /// The quote associated with this comment.
+        /// </summary>
+        [ForeignKey("quote_id")]
         public required virtual Quote Quote { get; set; }
+        /// <summary>
+        /// Foreign key for the associated quote.
+        /// </summary>
         public int quote_id { get; set; }
 
         // reference to Identity user
@@ -30,6 +37,7 @@ namespace Opinion_on_Quotes.Models
 
         // Temporarily hardcode
         public string UserName { get; set; } = "Anonymous";
+        public int quote_id { get; set; }
     }
 
     public class CreateCommentDto

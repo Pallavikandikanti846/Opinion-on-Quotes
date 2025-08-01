@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Exchange.WebServices.Data;
 using Opinion_on_Quotes.Data;
@@ -11,7 +12,7 @@ namespace Opinion_on_Quotes.Controllers
     [ApiController]
     [Route("api/[controller]")]
 
-    public class QuoteController : Controller
+    public class QuoteController : ControllerBase
     {
         private readonly IQuoteServices _QuoteServices;
 
@@ -93,6 +94,8 @@ namespace Opinion_on_Quotes.Controllers
         /// -> "{\"quote_id\":16,\"content\":\"Success is the sweetest revenge.I waited 900 years just to meet you.\",\"actor\":\"Park Seo-joon\",\"episode\":12,\"drama_id\":3}"
         /// Response Code: Quote with id 16 Updated Successfully
         /// </example>
+        /// update action here will be restricted to Admin
+        [Authorize(Roles = "Admin")]
         [HttpPut(template: "UpdateQuote/{id}")]
         public async Task<ActionResult> UpdateQuote(int id, [FromBody] QuoteDto QuoteDto)
         {
@@ -138,6 +141,8 @@ namespace Opinion_on_Quotes.Controllers
         /// Response Code: {"quote_id":16,"content":"You're the calm in my chaos.","actor":"Hyun Bin","episode":14,"drama_id":1}
         /// Response Headers: Location: api/Quote/FindQuote/{QuoteId}
         /// </example>
+        /// add action here will be restricted to Admin
+        [Authorize(Roles = "Admin")]
         [HttpPost(template: "AddQuote")]
         public async Task<ActionResult<Quote>> AddQuote([FromBody] QuoteDto QuoteDto)
         {
@@ -182,6 +187,8 @@ namespace Opinion_on_Quotes.Controllers
         /// ->Quote with id 17 Deleted Successfully
         /// Response Code: Quote with id 17 Deleted Successfully
         /// </example>
+        /// action here will be restricted to Admin
+        [Authorize(Roles = "Admin")]
         [HttpDelete("DeleteQuote/{id}")]
         public async Task<ActionResult> DeleteQuote(int id)
         {
