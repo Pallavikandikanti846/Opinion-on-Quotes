@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Opinion-On-Qoutes\\Opinion-on-Quotes\\Opinion-on-Quotes.csproj": {}
+    "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Opinion-on-Quotes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Opinion-On-Qoutes\\Opinion-on-Quotes\\Opinion-on-Quotes.csproj": {
+    "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Opinion-on-Quotes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Opinion-On-Qoutes\\Opinion-on-Quotes\\Opinion-on-Quotes.csproj",
+        "projectUniqueName": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Opinion-on-Quotes.csproj",
         "projectName": "Opinion-on-Quotes",
-        "projectPath": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Opinion-On-Qoutes\\Opinion-on-Quotes\\Opinion-on-Quotes.csproj",
+        "projectPath": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Opinion-on-Quotes.csproj",
         "packagesPath": "C:\\Users\\it_fa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Opinion-On-Qoutes\\Opinion-on-Quotes\\obj\\",
+        "outputPath": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

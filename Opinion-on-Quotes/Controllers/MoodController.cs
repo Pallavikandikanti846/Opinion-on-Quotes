@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Opinion_on_Quotes.Data;
 using Opinion_on_Quotes.Interfaces;
@@ -68,7 +69,7 @@ namespace Opinion_on_Quotes.Controllers
                 return Ok(aMood);
             }
         }
-     
+
         /// <summary>
         /// Updates a Mood
         /// </summary>
@@ -88,6 +89,8 @@ namespace Opinion_on_Quotes.Controllers
         /// ->"{\"mood_id\":11,\"type\":\"Melancholic\"}"
         /// Response Code: Mood with id 11 Updated Successfully
         /// </example>
+        /// admin only can update Mood
+        [Authorize(Roles = "Admin")]
         [HttpPut(template: "UpdateMood/{id}")]
         public async Task<ActionResult> UpdateMood(int id, [FromBody] MoodDto MoodDto)
         {
@@ -132,6 +135,8 @@ namespace Opinion_on_Quotes.Controllers
         /// Response Code: {"mood_id":13,"type":"Tense"}
         /// Response Headers: Location: api/Mood/FindMood/{MoodId}
         /// </example>
+        /// admin only can add Mood
+        [Authorize(Roles = "Admin")]
         [HttpPost(template: "AddMood")]
         public async Task<ActionResult<Mood>> AddMood([FromBody] MoodDto MoodDto)
         {
@@ -164,6 +169,9 @@ namespace Opinion_on_Quotes.Controllers
         /// ->Mood with id 13 Deleted Successfully
         /// Response Code: Mood with id 13 Deleted Successfully
         /// </example>
+        /// admin only can delete Mood
+        /// 
+        [Authorize(Roles = "Admin")]
         [HttpDelete("DeleteMood/{id}")]
         public async Task<ActionResult> DeleteMood(int id)
         {

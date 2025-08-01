@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4WFwIdbKxWA=",
+  "dgSpecHash": "SxVHyt89f6I=",
   "success": true,
-  "projectFilePath": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Opinion-On-Qoutes\\Opinion-on-Quotes\\Opinion-on-Quotes.csproj",
+  "projectFilePath": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Opinion-on-Quotes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\it_fa\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\it_fa\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
@@ -102,9 +102,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'Microsoft.Exchange.WebServices 2.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Opinion-On-Qoutes\\Opinion-on-Quotes\\Opinion-on-Quotes.csproj",
+      "projectPath": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Opinion-on-Quotes.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Opinion-On-Qoutes\\Opinion-on-Quotes\\Opinion-on-Quotes.csproj",
+      "filePath": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Opinion-on-Quotes.csproj",
       "libraryId": "Microsoft.Exchange.WebServices",
       "targetGraphs": [
         "net8.0"

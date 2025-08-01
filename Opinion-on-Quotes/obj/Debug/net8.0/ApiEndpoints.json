@@ -33,7 +33,7 @@
   },
   {
     "ContainingType": "Opinion_on_Quotes.Controllers.CommentsController",
-    "Method": "GetCommentsForquote",
+    "Method": "GetCommentsForQuote",
     "RelativePath": "api/Comments/GetCommentsForQuote/{quoteId}",
     "HttpMethod": "GET",
     "IsController": true,

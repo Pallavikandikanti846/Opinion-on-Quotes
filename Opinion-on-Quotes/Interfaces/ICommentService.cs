@@ -23,7 +23,8 @@ namespace Opinion_on_Quotes.Interfaces
         /// </summary>
         /// <param name="commentId">The ID of the comment to delete.</param>
         /// <returns>A ServiceResponse indicating success or failure.</returns>
-        Task<ServiceResponse> DeleteComment(int commentId);
+        Task<ServiceResponse> DeleteComment(int commentId, string userId);
+
 
         /// <summary>
         /// Retrieves all comments for a specific quote.
@@ -38,7 +39,7 @@ namespace Opinion_on_Quotes.Interfaces
         /// <param name="commentId">The ID of the comment to update.</param>
         /// <param name="newText">The new comment text.</param>
         /// <returns>A ServiceResponse indicating success or failure.</returns>
-        Task<ServiceResponse> UpdateComment(int commentId, string newText);
+        Task<ServiceResponse> UpdateComment(int commentId, string newText,string userId);
 
 
     }

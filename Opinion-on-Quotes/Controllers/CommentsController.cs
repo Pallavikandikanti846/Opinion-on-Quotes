@@ -1,4 +1,5 @@
 ﻿using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Opinion_on_Quotes.Interfaces;
@@ -23,6 +24,8 @@ namespace Opinion_on_Quotes.Controllers
         /// </summary>
         /// <param name="createCommentDto">The comment data to add.</param>
         /// <returns>A ServiceResponse indicating the result of the operation.</returns>
+        /// logged-in user must be authorized to add a comment
+        [Authorize]
         [HttpPost("AddComment")]
             public async Task<IActionResult> AddComment([FromBody] CreateCommentDto createCommentDto)
             {
@@ -42,31 +45,37 @@ namespace Opinion_on_Quotes.Controllers
         /// <param name="quoteId">The ID of the quote.</param>
         /// <returns>A list of CommentDto objects for the given quote.</returns>
         [HttpGet("GetCommentsForQuote/{quoteId}")]
-            public async Task<IActionResult> GetCommentsForquote(int quoteId)
+            public async Task<IActionResult> GetCommentsForQuote(int quoteId)
             {
                 var comments = await _commentService.GetCommentsForQuote(quoteId);
                 return Ok(comments);
             }
 
-            /// <summary>
-            /// Updates an existing comment.
-            /// </summary>
-            /// <param name="commentId">The ID of the comment to update.</param>
-            /// <param name="updatedText">The new text of the comment.</param>
-            /// <returns>A ServiceResponse indicating the result of the update.</returns>
-            [HttpPut("UpdateComment/{commentId}")]
-            public async Task<IActionResult> UpdateComment(int commentId, [FromBody] string updatedText)
-            {
-                var response = await _commentService.UpdateComment(commentId, updatedText);
+        /// <summary>
+        /// Updates an existing comment.
+        /// </summary>
+        /// <param name="commentId">The ID of the comment to update.</param>
+        /// <param name="updatedText">The new text of the comment.</param>
+        /// <returns>A ServiceResponse indicating the result of the update.</returns>
+        /// only authorized users can update comments
+        [Authorize]
+        [HttpPut("UpdateComment/{commentId}")]
+        public async Task<IActionResult> UpdateComment(int commentId, [FromBody] string updatedText)
+        {
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // get logged-in user's ID
+            var response = await _commentService.UpdateComment(commentId, updatedText, userId);
 
                 if (response.Status == ServiceResponse.ServiceStatus.NotFound)
                     return NotFound(response.Messages);
 
+                if (response.Status == ServiceResponse.ServiceStatus.Forbidden)
+                    return Forbid(); // Handle unauthorized update
+
                 if (response.Status == ServiceResponse.ServiceStatus.Error)
-                    return StatusCode(500, response.Messages);
+                        return StatusCode(500, response.Messages);
 
                 return Ok(response);
-            }
+        }
             /// <summary>
             /// Deletes a comment by its ID.
             /// </summary>
@@ -75,9 +84,12 @@ namespace Opinion_on_Quotes.Controllers
             [HttpDelete("DeleteComment/{commentId}")]
             public async Task<IActionResult> DeleteComment(int commentId)
             {
-                var response = await _commentService.DeleteComment(commentId);
+             
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); //  Get user ID from token
+            var response = await _commentService.DeleteComment(commentId, userId); //  Pass userId
 
-                if (response.Status == ServiceResponse.ServiceStatus.NotFound)
+
+            if (response.Status == ServiceResponse.ServiceStatus.NotFound)
                     return NotFound(response.Messages);
 
                 if (response.Status == ServiceResponse.ServiceStatus.Error)

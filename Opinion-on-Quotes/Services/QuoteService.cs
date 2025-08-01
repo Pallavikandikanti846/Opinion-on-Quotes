@@ -1,4 +1,5 @@
 ﻿using Azure;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Opinion_on_Quotes.Data;
 using Opinion_on_Quotes.Interfaces;
@@ -8,47 +9,59 @@ namespace Opinion_on_Quotes.Services
 {
     public class QuoteService: IQuoteServices
     {
+        private readonly UserManager<IdentityUser> _userManager;
+
         private readonly ApplicationDbContext _context;
         // dependency injection of database context
-        public QuoteService(ApplicationDbContext context)
+        public QuoteService(UserManager<IdentityUser> userManager, ApplicationDbContext context)
         {
+            _userManager = userManager;
             _context = context;
         }
 
 
+
         public async Task<IEnumerable<QuoteDto>> ListQuotes()
         {
-            // all Quotes
-            List<Quote> Quotes = await _context.Quotes
-                 .Include(q => q.Comments)
+            List<Quote> quotes = await _context.Quotes
+                .Include(q => q.Comments)
                 .ToListAsync();
-            // empty list of data transfer object QuoteDto
-            List<QuoteDto> QuoteDtos = new List<QuoteDto>();
-            // foreach Quote record in database
-            foreach (Quote Quote in Quotes)
+
+            List<QuoteDto> quoteDtos = new List<QuoteDto>();
+
+            foreach (var quote in quotes)
             {
-                QuoteDtos.Add(new QuoteDto()
+                List<CommentDto> commentDtos = new List<CommentDto>();
+
+                foreach (var comment in quote.Comments)
                 {
-                    quote_id = Quote.quote_id,
-                    content = Quote.content,
-                    actor = Quote.actor,
-                    episode = Quote.episode,
-                    drama_id = Quote.drama_id,
-                    comments = Quote.Comments.Select(c => new CommentDto()
+                    var user = await _userManager.FindByIdAsync(comment.UserId);
+                    string username = user?.UserName ?? "Anonymous";
+
+                    commentDtos.Add(new CommentDto
                     {
-                        CommentId = c.CommentId,
-                        CommentText = c.CommentText,
-                        CreatedAt = c.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss"),
-                       
-                        quote_id = c.quote_id,
-                        UserName = c.UserId
-                    }).ToList()
+                        CommentId = comment.CommentId,
+                        CommentText = comment.CommentText,
+                        CreatedAt = comment.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss"),
+                        UserName = username,
+                        quote_id = comment.quote_id
+                    });
+                }
+
+                quoteDtos.Add(new QuoteDto
+                {
+                    quote_id = quote.quote_id,
+                    content = quote.content,
+                    actor = quote.actor,
+                    episode = quote.episode,
+                    drama_id = quote.drama_id,
+                    comments = commentDtos
                 });
             }
-            // return QuoteDtos
-            return QuoteDtos;
 
+            return quoteDtos;
         }
+
 
 
         public async Task<QuoteDto?> FindQuote(int id)
