@@ -1,0 +1,62 @@
+﻿@model Opinion_on_Quotes.Models.QuoteDto
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #fefefe;
+        margin: 30px;
+        color: #333;
+    }
+
+    h2 {
+        text-align: center;
+        color: #c0392b;
+        margin-bottom: 15px;
+    }
+
+    h4, p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        background-color: #e74c3c;
+        color: white;
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+        button:hover {
+            background-color: #c0392b;
+        }
+
+    a {
+        color: #3498db;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+</style>
+
+<h2>Are you sure you want to delete this Quote?</h2>
+
+<h4>@Model.quote_id</h4>
+<p>@Model.content</p>
+
+<form asp-action="Delete" asp-controller="QuotePage" method="post">
+    <input type="hidden" name="id" value="@Model.quote_id" />
+    <button type="submit">Yes, Delete</button>
+    <a href="/QuotePage/Details/@Model.quote_id">Cancel</a>
+</form>

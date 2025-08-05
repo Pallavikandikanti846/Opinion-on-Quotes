@@ -1,0 +1,125 @@
+﻿@model Opinion_on_Quotes.Models.QuoteDto
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f8f9fa;
+        margin: 20px;
+        color: #333;
+    }
+
+    h2 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 10px;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 16px;
+        color: #555;
+    }
+
+    h4 {
+        margin-top: 30px;
+        color: #444;
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    form {
+        margin-top: 20px;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 6px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    }
+
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        resize: vertical;
+        font-size: 14px;
+    }
+
+    button {
+        margin-top: 10px;
+        background-color: #17a2b8;
+        color: white;
+        padding: 10px 14px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+        button:hover {
+            background-color: #138496;
+        }
+
+    hr {
+        margin: 30px 0;
+    }
+
+    a[href^="/TopicPage/ConfirmDelete"] {
+        display: inline-block;
+        color: #dc3545;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+        a[href^="/TopicPage/ConfirmDelete"]:hover {
+            text-decoration: underline;
+        }
+</style>
+
+<h2>@Model.quote_id</h2>
+<p>@Model.content</p>
+
+<h4>Moods</h4>
+<ul>
+    @foreach (var mood in Model.QuoteMood)
+    {
+        <li>@mood</li>
+    }
+</ul>
+
+<h4>Comments</h4>
+@if (Model.comments != null && Model.comments.Any())
+{
+    <ul>
+        @foreach (var comment in Model.comments)
+        {
+            <li>
+                <strong>@comment.UserName</strong> (@comment.CreatedAt):<br />
+                @comment.CommentText
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No comments yet.</p>
+}
+
+<h4>Add a Comment</h4>
+<form method="post" asp-action="AddComment" asp-controller="TopicPage">
+    <input type="hidden" name="quoteId" value="@Model.quote_id" />
+    <div>
+        <textarea name="CommentText" rows="4" cols="50" required></textarea>
+    </div>
+    <button type="submit">Post Comment</button>
+</form>
+
+<hr />
+<a href="/QuotePage/ConfirmDelete/@Model.quote_id">Delete Quote</a>

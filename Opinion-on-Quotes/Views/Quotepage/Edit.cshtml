@@ -1,0 +1,82 @@
+﻿@* @model Opinion_on_Quotes.Models.CreateTopicDto *@
+@* <style> *@
+@*     form { *@
+@*         max-width: 600px; *@
+@*         margin: 30px auto; *@
+@*         padding: 20px; *@
+@*         background-color: #fff; *@
+@*         border-radius: 8px; *@
+@*         font-family: Arial, sans-serif; *@
+@*         box-shadow: 0 0 12px rgba(0, 0, 0, 0.05); *@
+@*     } *@
+
+@*     h2 { *@
+@*         text-align: center; *@
+@*         color: #444; *@
+@*         margin-bottom: 25px; *@
+@*     } *@
+
+@*     label { *@
+@*         display: block; *@
+@*         margin-bottom: 6px; *@
+@*         font-weight: bold; *@
+@*         color: #333; *@
+@*     } *@
+
+@*     input[type="text"], *@
+@*     textarea, *@
+@*     select { *@
+@*         width: 100%; *@
+@*         padding: 10px; *@
+@*         margin-bottom: 18px; *@
+@*         border: 1px solid #ccc; *@
+@*         border-radius: 4px; *@
+@*         font-size: 14px; *@
+@*     } *@
+
+@*         select[multiple] { *@
+@*             height: 100px; *@
+@*         } *@
+
+@*     button { *@
+@*         background-color: #ffc107; *@
+@*         color: #000; *@
+@*         padding: 10px 16px; *@
+@*         border: none; *@
+@*         border-radius: 4px; *@
+@*         font-size: 16px; *@
+@*         cursor: pointer; *@
+@*         width: 100%; *@
+@*     } *@
+
+@*         button:hover { *@
+@*             background-color: #e0a800; *@
+@*         } *@
+@* </style> *@
+
+@* <h2>Edit Topic</h2> *@
+
+@* <form method="post" asp-action="Update" asp-controller="QuotePage"> *@
+@*     <input type="hidden" name="TopicId" value="@Model.quote_id" /> *@
+
+@*     <div> *@
+@*         <label>Content</label> *@
+@*         <input type="text" name="TopicTitle" value="@Model.content" /> *@
+@*     </div> *@
+
+
+@*     <div> *@
+@*         <label>Categories</label> *@
+@*         <select name="CategoryIds" multiple> *@
+@*             @foreach (var mood in ViewBag.MoodList) *@
+@*             { *@
+@*                 var isSelected = Model.mood_id.Contains(mood.mood_id); *@
+@*                 <option value="@mood.mood-id" selected="@(isSelected ? "selected" : null)"> *@
+@*                     @mood.type *@
+@*                 </option> *@
+@*             } *@
+@*         </select> *@
+@*     </div> *@
+
+@*     <button type="submit">Update Quote</button> *@
+@* </form> *@

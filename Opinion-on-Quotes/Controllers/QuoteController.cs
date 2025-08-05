@@ -148,10 +148,17 @@ namespace Opinion_on_Quotes.Controllers
         {
             try
             {
+
+                //get the currently logged-in user id
+                var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+                if (userId == null || userId == "")
+                {
+                    return Unauthorized("User not logged in.");
+                }
                 Console.WriteLine($"Received AddQuote request: {System.Text.Json.JsonSerializer.Serialize(QuoteDto)}");
 
 
-                ServiceResponse response = await _QuoteServices.AddQuote(QuoteDto);
+                ServiceResponse response = await _QuoteServices.AddQuote(QuoteDto,userId);
 
             if (response.Status == ServiceResponse.ServiceStatus.NotFound)
             {
