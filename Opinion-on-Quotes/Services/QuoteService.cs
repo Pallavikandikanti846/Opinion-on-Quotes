@@ -138,7 +138,7 @@ namespace Opinion_on_Quotes.Services
         }
 
 
-        public async Task<ServiceResponse> AddQuote(QuoteDto QuoteDto)
+        public async Task<ServiceResponse> AddQuote(QuoteDto QuoteDto, string userId)
         {
             ServiceResponse serviceResponse = new();
 
@@ -160,7 +160,8 @@ namespace Opinion_on_Quotes.Services
                 content = QuoteDto.content,
                 actor = QuoteDto.actor,
                 episode = QuoteDto.episode,
-                Drama = drama
+                Drama = drama,
+                UserId=userId
             };
             // SQL Equivalent: Insert into Quote (..) values (..)
 

@@ -35,7 +35,7 @@ namespace Opinion_on_Quotes.Models
         /// <summary>
         /// Holds a single Quote's data, used in find-by-ID responses.
         /// </summary>
-        public QuoteDto QuoteData { get; set; }
+        public QuoteDto? QuoteData { get; set; }
 
         /// <summary>
         /// Holds a list of Quotes,  used find all Quotes by categoryId.

@@ -13,7 +13,7 @@ namespace Opinion_on_Quotes.Interfaces
 
         Task<Models.ServiceResponse> UpdateQuote(QuoteDto QuoteDto);
 
-        Task<Models.ServiceResponse> AddQuote(QuoteDto QuoteDto);
+        Task<Models.ServiceResponse> AddQuote(QuoteDto QuoteDto, string userId);
 
         Task<Models.ServiceResponse> DeleteQuote(int id);
 
