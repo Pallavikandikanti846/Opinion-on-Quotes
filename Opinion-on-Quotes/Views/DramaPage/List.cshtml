@@ -1,0 +1,33 @@
+﻿@using Opinion_on_Quotes.Models
+@model IEnumerable<Opinion_on_Quotes.Models.DramaDto>
+<h2>Drama List</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+    <th>Title</th>
+    <th>Year</th>
+    <th>Genre</th>
+
+    <th>Synopsis</th>
+    <th>Actions</th>
+		</tr>
+    </thead>
+   <tbody>
+       @foreach (var drama in Model)
+        {
+            <tr>
+                <td>@drama.title</td>
+                <td>@drama.release_year</td>
+                <td>@drama.genre</td>
+                <td>@drama.synopsis</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@drama.drama_id">Details</a>
+					<a asp-action="Edit" asp-route-id="@drama.drama_id">Edit</a>
+					<a asp-action="Delete" asp-route-id="@drama.drama_id">Delete</a>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+    </table>
+<a asp-action="Create" class="btn btn-primary">Add New Drama</a>

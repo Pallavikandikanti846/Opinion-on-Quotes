@@ -24,12 +24,52 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/it_fa/OneDrive/Humber WebDev/Back-End-Web-Development-2-HTTP-5226-RNB/Creative Collab/Opinion-on-Quotes/Opinion-on-Quotes/Views/DramaPage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJhbWFQYWdlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it_fa/OneDrive/Humber WebDev/Back-End-Web-Development-2-HTTP-5226-RNB/Creative Collab/Opinion-on-Quotes/Opinion-on-Quotes/Views/DramaPage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJhbWFQYWdlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it_fa/OneDrive/Humber WebDev/Back-End-Web-Development-2-HTTP-5226-RNB/Creative Collab/Opinion-on-Quotes/Opinion-on-Quotes/Views/DramaPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJhbWFQYWdlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it_fa/OneDrive/Humber WebDev/Back-End-Web-Development-2-HTTP-5226-RNB/Creative Collab/Opinion-on-Quotes/Opinion-on-Quotes/Views/DramaPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJhbWFQYWdlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it_fa/OneDrive/Humber WebDev/Back-End-Web-Development-2-HTTP-5226-RNB/Creative Collab/Opinion-on-Quotes/Opinion-on-Quotes/Views/DramaPage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHJhbWFQYWdlXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/it_fa/OneDrive/Humber WebDev/Back-End-Web-Development-2-HTTP-5226-RNB/Creative Collab/Opinion-on-Quotes/Opinion-on-Quotes/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/it_fa/OneDrive/Humber WebDev/Back-End-Web-Development-2-HTTP-5226-RNB/Creative Collab/Opinion-on-Quotes/Opinion-on-Quotes/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it_fa/OneDrive/Humber WebDev/Back-End-Web-Development-2-HTTP-5226-RNB/Creative Collab/Opinion-on-Quotes/Opinion-on-Quotes/Views/QuotePage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVQYWdlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it_fa/OneDrive/Humber WebDev/Back-End-Web-Development-2-HTTP-5226-RNB/Creative Collab/Opinion-on-Quotes/Opinion-on-Quotes/Views/QuotePage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVQYWdlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it_fa/OneDrive/Humber WebDev/Back-End-Web-Development-2-HTTP-5226-RNB/Creative Collab/Opinion-on-Quotes/Opinion-on-Quotes/Views/QuotePage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVQYWdlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it_fa/OneDrive/Humber WebDev/Back-End-Web-Development-2-HTTP-5226-RNB/Creative Collab/Opinion-on-Quotes/Opinion-on-Quotes/Views/QuotePage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVQYWdlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/it_fa/OneDrive/Humber WebDev/Back-End-Web-Development-2-HTTP-5226-RNB/Creative Collab/Opinion-on-Quotes/Opinion-on-Quotes/Views/QuotePage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVQYWdlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/it_fa/OneDrive/Humber WebDev/Back-End-Web-Development-2-HTTP-5226-RNB/Creative Collab/Opinion-on-Quotes/Opinion-on-Quotes/Views/Shared/Error.cshtml]

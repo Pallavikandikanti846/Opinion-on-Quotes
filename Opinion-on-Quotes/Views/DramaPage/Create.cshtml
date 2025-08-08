@@ -1,0 +1,28 @@
+﻿@model Opinion_on_Quotes.Models.DramaDto
+
+<h2>Add New Drama</h2>
+
+<form asp-action="Add" method="post">
+    <div>
+        <label>Title</label>
+        <input asp-for="title" />
+    </div>
+
+    <div>
+        <label>Release Year</label>
+        <input asp-for="release_year" type="number" />
+    </div>
+
+    <div>
+        <label>Genre</label>
+        <input asp-for="genre" />
+    </div>
+
+    <div>
+        <label>Synopsis</label>
+        <textarea asp-for="synopsis"></textarea>
+    </div>
+
+    <button type="submit">Create</button>
+    <a asp-action="List">Cancel</a>
+</form>
