@@ -21,13 +21,14 @@
                 <td>@drama.genre</td>
                 <td>@drama.synopsis</td>
                 <td>
-                    <a asp-action="Details" asp-route-id="@drama.drama_id">Details</a>
-					<a asp-action="Edit" asp-route-id="@drama.drama_id">Edit</a>
-					<a asp-action="Delete" asp-route-id="@drama.drama_id">Delete</a>
+                    
+                    <a href="/DramaPage/Edit/@drama.drama_id">Edit</a>
+                    <a href="/DramaPage/DeleteConfirmation/@drama.drama_id">Delete</a>
+
                 </td>
             </tr>
 
         }
     </tbody>
     </table>
-<a asp-action="Create" class="btn btn-primary">Add New Drama</a>
+<a href="/DramaPage/Create" class="btn btn-primary">Add New Drama</a>

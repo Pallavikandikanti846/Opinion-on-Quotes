@@ -55,7 +55,7 @@ namespace Opinion_on_Quotes.Services
                     actor = quote.actor,
                     episode = quote.episode,
                     drama_id = quote.drama_id,
-                    comments = commentDtos
+                    //comments = commentDtos
                 });
             }
 
@@ -248,7 +248,7 @@ namespace Opinion_on_Quotes.Services
                     content = Quote.content,
                     actor = Quote.actor,
                     episode = Quote.episode,
-                    title=Quote.Drama?.title,
+                    
                     drama_id=Quote.drama_id
                 });
             }

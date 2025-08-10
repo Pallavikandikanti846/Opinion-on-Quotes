@@ -32,10 +32,10 @@ namespace Opinion_on_Quotes.Models
         public string? content { get; set; }
         public string? actor { get; set; }
         public int episode { get; set; }
-        public string? title { get; set; }
+        
 
         public int drama_id { get; set; }
-        public List<CommentDto>? comments { get; set; }
+        //public List<CommentDto>? comments { get; set; }
 
 
     }

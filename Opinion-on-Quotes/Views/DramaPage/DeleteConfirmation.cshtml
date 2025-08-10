@@ -1,0 +1,16 @@
+﻿<!-- DeleteConfirmation.cshtml -->
+@model Opinion_on_Quotes.Models.DramaDto
+<h2> Confirm Delete </h2>
+<p>Are you sure you want to delete this drama?</p>
+<ul>
+    <li><strong>Title:</strong> @Model.title</li>
+    <li><strong>Release Year:</strong> @Model.release_year</li>
+    <li><strong>Genre:</strong> @Model.genre</li>
+    <li><strong>Synopsis:</strong> @Model.synopsis</li>
+</ul>
+
+<form action="/DramaPage/Delete/@Model.drama_id" method="post">
+    <button type="submit" class="btn btn-danger">Yes, Delete</button> 
+
+    <a href="/DramaPage/List" class="btn btn-secondary">Cancel</a>
+</form>

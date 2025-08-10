@@ -75,7 +75,7 @@ namespace Opinion_on_Quotes.Services
                 actor = quote.actor,
                 episode = quote.episode,
                 drama_id = quote.drama_id,
-                comments = commentDtos
+                //comments = commentDtos
             };
 
             return response;

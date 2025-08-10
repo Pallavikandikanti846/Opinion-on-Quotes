@@ -2,27 +2,27 @@
 
 <h2>Add New Drama</h2>
 
-<form asp-action="Add" method="post">
+<form action="/DramaPage/Add" method="post">
     <div>
         <label>Title</label>
-        <input asp-for="title" />
+        <input name="title" />
     </div>
 
     <div>
         <label>Release Year</label>
-        <input asp-for="release_year" type="number" />
+        <input name="release_year" type="number" />
     </div>
 
     <div>
         <label>Genre</label>
-        <input asp-for="genre" />
+        <input name="genre" />
     </div>
 
     <div>
         <label>Synopsis</label>
-        <textarea asp-for="synopsis"></textarea>
+        <textarea name="synopsis"></textarea>
     </div>
 
     <button type="submit">Create</button>
-    <a asp-action="List">Cancel</a>
+    <a href="/DramaPage/List">Cancel</a>
 </form>

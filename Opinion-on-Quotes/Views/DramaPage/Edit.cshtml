@@ -1,5 +1,29 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model Opinion_on_Quotes.Models.DramaDto
+<h2>Edit Drama</h2>
+
+<form action="/DramaPage/Update" method="post">
+    <input type="hidden" name="drama_id" value="@Model.drama_id" />
+
+    <div class="form-group">
+        <label>Title</label>
+        <input name="title" class="form-control" value="@Model.title" />
+    </div>
+
+    <div class="form-group">
+        <label>Release Year</label>
+        <input name="release_year" class="form-control" type="number" value="@Model.release_year" />
+    </div>
+
+    <div class="form-group">
+        <label>Genre</label>
+        <input name="genre" class="form-control" value="@Model.genre" />
+    </div>
+
+    <div class="form-group">
+        <label>Synopsis</label>
+        <textarea name="synopsis" class="form-control">@Model.synopsis</textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a href="/DramaPage/List" class="btn btn-secondary">Cancel</a>
+</form>
