@@ -1,5 +1,35 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@model Opinion_on_Quotes.Models.QuoteDto
+<h2>Quote Details</h2>
+
+<div class="mb-4">
+    <p><strong>Quote:</strong> @Model.content</p>
+    <p><strong>Actor:</strong> @Model.actor</p>
+    <p><strong>Episode:</strong> @Model.episode</p>
+    <p><strong>Drama:</strong> @Model.drama_title</p>
+    
+
+</div>
+
+<h4>Comments</h4>
+@if (Model.comments.Any())
+{
+    <ul class="list-group">
+        @foreach (var comment in Model.comments)
+        {
+            <li class="list-group-item">
+                <strong>@comment.UserName</strong> (@comment.CreatedAt):<br />
+                @comment.CommentText
+            </li>
+        }
+    </ul>
 }
+else
+{
+    <p>No comments yet.</p>
+}
+
+<div class="mt-4">
+    <a href="/QuotePage/Edit/@Model.quote_id" class="btn btn-warning">Edit</a>
+    <a href="/QuotePage/DeleteConfirmation/@Model.quote_id" class="btn btn-danger">Delete</a>
+    <a href="/QuotePage/List" class="btn btn-secondary">Back to List</a>
+</div>

@@ -10,7 +10,7 @@ namespace Opinion_on_Quotes.Models
 
         //Each quote belongs to one drama
         [ForeignKey("drama_id")]
-        public required virtual Drama Drama { get; set; }
+        public required virtual Drama? Drama { get; set; }
 
         public int drama_id { get; set; }
 
@@ -32,10 +32,13 @@ namespace Opinion_on_Quotes.Models
         public string? content { get; set; }
         public string? actor { get; set; }
         public int episode { get; set; }
+        public string drama_title { get; set; }
         
 
+
+
         public int drama_id { get; set; }
-        //public List<CommentDto>? comments { get; set; }
+        public List<CommentDto>? comments { get; set; }
 
 
     }

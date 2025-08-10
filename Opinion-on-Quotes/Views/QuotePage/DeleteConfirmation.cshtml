@@ -1,0 +1,19 @@
+﻿<!-- DeleteConfirmation.cshtml -->
+@model Opinion_on_Quotes.Models.QuoteDto
+
+
+<h2> Confirm Delete Quote </h2>
+<p>Are you sure you want to delete this quote?</p>
+<ul>
+    <li><strong>Content:</strong> @Model.content</li>
+    <li><strong>Actor:</strong> @Model.actor</li>
+    <li><strong>Drama:</strong> @Model.drama_title</li>
+    
+    <li><strong>Eposode:</strong> @Model.episode</li>
+</ul>
+
+<form action="/QuotePage/Delete/@Model.quote_id" method="post">
+    <button type="submit" class="btn btn-danger">Yes, Delete</button> 
+
+    <a href="/QuotePage/List" class="btn btn-secondary">Cancel</a>
+</form>

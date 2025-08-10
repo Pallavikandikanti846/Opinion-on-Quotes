@@ -789,6 +789,32 @@
         },
         "additionalProperties": false
       },
+      "CommentDto": {
+        "type": "object",
+        "properties": {
+          "commentId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "commentText": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "quote_id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateCommentDto": {
         "type": "object",
         "properties": {
@@ -945,9 +971,20 @@
             "type": "integer",
             "format": "int32"
           },
+          "drama_title": {
+            "type": "string",
+            "nullable": true
+          },
           "drama_id": {
             "type": "integer",
             "format": "int32"
+          },
+          "comments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CommentDto"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false

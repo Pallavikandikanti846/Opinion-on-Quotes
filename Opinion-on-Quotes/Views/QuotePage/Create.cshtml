@@ -1,1 +1,36 @@
-﻿
+﻿@model Opinion_on_Quotes.Models.QuoteDto
+
+<h2>Add Quote</h2>
+
+<form action="/QuotePage/Add" method="post">
+    <div class="form-group">
+        <label for="content">Quote</label>
+        <input name="content" id="content" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="actor">Actor</label>
+        <input name="actor" id="actor" class="form-control"  />
+    </div>
+
+    <div class="form-group">
+        <label for="episode">Episode</label>
+        <input name="episode" id="episode" type="number" class="form-control" />
+    
+    <div class="form-group">
+        <label for="drama_id">Drama</label>
+        <select name="drama_id" id="drama_id" class="form-control">
+            <option value="">-- Select a drama --</option>
+            @foreach (var drama in ViewBag.Dramas)
+            {
+                <option value="@drama.drama_id">@drama.title</option>
+            }
+        </select>
+    </div>
+
+    <div class="mt-3">
+            <button type="submit" class="btn btn-success">Add Quote</button>
+            <a href="/QuotePage/List" class="btn btn-secondary">Cancel</a>
+    </div>
+
+</form>

@@ -25,28 +25,14 @@ namespace Opinion_on_Quotes.Services
         {
             List<Quote> quotes = await _context.Quotes
                 .Include(q => q.Comments)
+                .Include(q => q.Drama)
                 .ToListAsync();
 
             List<QuoteDto> quoteDtos = new List<QuoteDto>();
 
             foreach (var quote in quotes)
             {
-                List<CommentDto> commentDtos = new List<CommentDto>();
-
-                foreach (var comment in quote.Comments)
-                {
-                    var user = await _userManager.FindByIdAsync(comment.UserId);
-                    string username = user?.UserName ?? "Anonymous";
-
-                    commentDtos.Add(new CommentDto
-                    {
-                        CommentId = comment.CommentId,
-                        CommentText = comment.CommentText,
-                        CreatedAt = comment.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss"),
-                        UserName = username,
-                        quote_id = comment.quote_id
-                    });
-                }
+                
 
                 quoteDtos.Add(new QuoteDto
                 {
@@ -55,6 +41,7 @@ namespace Opinion_on_Quotes.Services
                     actor = quote.actor,
                     episode = quote.episode,
                     drama_id = quote.drama_id,
+                    drama_title = quote.Drama?.title,
                     //comments = commentDtos
                 });
             }
@@ -67,23 +54,45 @@ namespace Opinion_on_Quotes.Services
         public async Task<QuoteDto?> FindQuote(int id)
         {
 
-            var Quote = await _context.Quotes
+            var quote = await _context.Quotes
                  .Include(q => q.Comments)
+                 .Include(q => q.Drama)
                 .FirstOrDefaultAsync(c => c.quote_id == id);
 
             // no Quote found
-            if (Quote == null)
+            if (quote == null)
             {
                 return null;
+            }
+
+            List<CommentDto> commentDtos = new List<CommentDto>();
+
+            foreach (var comment in quote.Comments)
+            {
+                var user = await _userManager.FindByIdAsync(comment.UserId);
+                string username = user?.UserName ?? "Anonymous";
+
+                commentDtos.Add(new CommentDto
+                {
+                    CommentId = comment.CommentId,
+                    CommentText = comment.CommentText,
+                    CreatedAt = comment.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss"),
+                    UserName = username,
+                    quote_id = comment.quote_id
+                });
             }
             // create an instance of QuoteDto
             QuoteDto QuoteDtos = new QuoteDto()
             {
-                quote_id = Quote.quote_id,
-                content = Quote.content,
-                actor = Quote.actor,
-                episode = Quote.episode,
-                drama_id = Quote.drama_id
+                quote_id = quote.quote_id,
+                content = quote.content,
+                actor = quote.actor,
+                episode = quote.episode,
+                drama_id = quote.drama_id,
+               
+                drama_title = quote.Drama?.title,
+                
+                comments = commentDtos
             };
             return QuoteDtos;
 

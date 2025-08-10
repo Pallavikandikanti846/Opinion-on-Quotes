@@ -3,44 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\views\\dramapage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\views\\dramapage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\views\\quotepage\\deleteconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\views\\quotepage\\deleteconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\controllers\\dramapagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\controllers\\dramapagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\views\\dramapage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\views\\dramapage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\views\\dramapage\\deleteconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\views\\dramapage\\deleteconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\views\\quotepage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\views\\quotepage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\views\\dramapage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\views\\dramapage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\views\\quotepage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\views\\quotepage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\views\\quotepage\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\views\\quotepage\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\views\\quotepage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\views\\quotepage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\views\\quotepage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\views\\quotepage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\services\\quoteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,19 +19,31 @@
       "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\models\\quote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\controllers\\quotepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\controllers\\quotepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Opinion_on_Quotes_6ebd8128_c916_49cd_b631_ac68b349f7ab/True/SqlTable/dbo.Quotes.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\controllers\\dramapagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\controllers\\dramapagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\views\\quotepage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\views\\quotepage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\views\\quotepage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\views\\quotepage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\views\\quotepage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\views\\quotepage\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\views\\quotepage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\views\\quotepage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|c:\\users\\it_fa\\onedrive\\humber webdev\\back-end-web-development-2-http-5226-rnb\\creative collab\\opinion-on-quotes\\opinion-on-quotes\\views\\dramapage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4648FE92-EA61-4F03-A782-324AA261FDFF}|Opinion-on-Quotes\\Opinion-on-Quotes.csproj|solutionrelative:opinion-on-quotes\\views\\dramapage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -73,145 +53,107 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\DramaPage\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Opinion-on-Quotes\\Views\\DramaPage\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\DramaPage\\Edit.cshtml",
-              "RelativeToolTip": "Opinion-on-Quotes\\Views\\DramaPage\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-10T16:31:07.801Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DeleteConfirmation.cshtml",
-              "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\DramaPage\\DeleteConfirmation.cshtml",
-              "RelativeDocumentMoniker": "Opinion-on-Quotes\\Views\\DramaPage\\DeleteConfirmation.cshtml",
-              "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\DramaPage\\DeleteConfirmation.cshtml",
-              "RelativeToolTip": "Opinion-on-Quotes\\Views\\DramaPage\\DeleteConfirmation.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-10T03:24:27.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Opinion-on-Quotes\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Opinion-on-Quotes\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-10T03:15:08.597Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
               "Title": "dbo.Quotes [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_Opinion_on_Quotes_6ebd8128_c916_49cd_b631_ac68b349f7ab/True/SqlTable/dbo.Quotes.sql",
               "ToolTip": "dbo.Quotes [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-08-10T03:01:47.549Z",
+              "WhenOpened": "2025-08-10T21:10:59.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CommentService.cs",
-              "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Services\\CommentService.cs",
-              "RelativeDocumentMoniker": "Opinion-on-Quotes\\Services\\CommentService.cs",
-              "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Services\\CommentService.cs",
-              "RelativeToolTip": "Opinion-on-Quotes\\Services\\CommentService.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAgwFAAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T02:54:11.179Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Quote.cs",
-              "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Models\\Quote.cs",
-              "RelativeDocumentMoniker": "Opinion-on-Quotes\\Models\\Quote.cs",
-              "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Models\\Quote.cs",
-              "RelativeToolTip": "Opinion-on-Quotes\\Models\\Quote.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwCIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T02:53:45.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\DramaPage\\Create.cshtml",
               "RelativeDocumentMoniker": "Opinion-on-Quotes\\Views\\DramaPage\\Create.cshtml",
               "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\DramaPage\\Create.cshtml",
               "RelativeToolTip": "Opinion-on-Quotes\\Views\\DramaPage\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-06T02:08:56.364Z",
+              "WhenOpened": "2025-08-10T20:36:02.363Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Opinion-on-Quotes\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Opinion-on-Quotes\\Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T01:52:24.134Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DramaPageController.cs",
-              "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Controllers\\DramaPageController.cs",
-              "RelativeDocumentMoniker": "Opinion-on-Quotes\\Controllers\\DramaPageController.cs",
-              "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Controllers\\DramaPageController.cs",
-              "RelativeToolTip": "Opinion-on-Quotes\\Controllers\\DramaPageController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAmwFIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T01:30:08.715Z",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\QuotePage\\Create.cshtml",
+              "RelativeDocumentMoniker": "Opinion-on-Quotes\\Views\\QuotePage\\Create.cshtml",
+              "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\QuotePage\\Create.cshtml",
+              "RelativeToolTip": "Opinion-on-Quotes\\Views\\QuotePage\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-10T19:12:25.44Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "List.cshtml",
-              "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\DramaPage\\List.cshtml",
-              "RelativeDocumentMoniker": "Opinion-on-Quotes\\Views\\DramaPage\\List.cshtml",
-              "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\DramaPage\\List.cshtml",
-              "RelativeToolTip": "Opinion-on-Quotes\\Views\\DramaPage\\List.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAUAAAAAAAAAA==",
+              "Title": "DeleteConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\QuotePage\\DeleteConfirmation.cshtml",
+              "RelativeDocumentMoniker": "Opinion-on-Quotes\\Views\\QuotePage\\DeleteConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\QuotePage\\DeleteConfirmation.cshtml",
+              "RelativeToolTip": "Opinion-on-Quotes\\Views\\QuotePage\\DeleteConfirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-06T01:11:12.386Z",
+              "WhenOpened": "2025-08-10T19:12:15.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DramaPageController.cs",
+              "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Controllers\\DramaPageController.cs",
+              "RelativeDocumentMoniker": "Opinion-on-Quotes\\Controllers\\DramaPageController.cs",
+              "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Controllers\\DramaPageController.cs",
+              "RelativeToolTip": "Opinion-on-Quotes\\Controllers\\DramaPageController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAYwEwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T18:52:24.401Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\QuotePage\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Opinion-on-Quotes\\Views\\QuotePage\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\QuotePage\\Delete.cshtml",
-              "RelativeToolTip": "Opinion-on-Quotes\\Views\\QuotePage\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\QuotePage\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Opinion-on-Quotes\\Views\\QuotePage\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\QuotePage\\Edit.cshtml",
+              "RelativeToolTip": "Opinion-on-Quotes\\Views\\QuotePage\\Edit.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAcwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-06T01:03:44.725Z",
+              "WhenOpened": "2025-08-10T18:47:06.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\QuotePage\\List.cshtml",
+              "RelativeDocumentMoniker": "Opinion-on-Quotes\\Views\\QuotePage\\List.cshtml",
+              "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\QuotePage\\List.cshtml",
+              "RelativeToolTip": "Opinion-on-Quotes\\Views\\QuotePage\\List.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-10T18:31:56.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QuotePageController.cs",
+              "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Controllers\\QuotePageController.cs",
+              "RelativeDocumentMoniker": "Opinion-on-Quotes\\Controllers\\QuotePageController.cs",
+              "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Controllers\\QuotePageController.cs",
+              "RelativeToolTip": "Opinion-on-Quotes\\Controllers\\QuotePageController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAwwHkAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T18:27:01.181Z",
               "EditorCaption": ""
             },
             {
@@ -222,60 +164,35 @@
               "RelativeDocumentMoniker": "Opinion-on-Quotes\\Views\\QuotePage\\Details.cshtml",
               "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\QuotePage\\Details.cshtml",
               "RelativeToolTip": "Opinion-on-Quotes\\Views\\QuotePage\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-06T01:03:18.975Z",
+              "WhenOpened": "2025-08-10T18:20:12.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\QuotePage\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Opinion-on-Quotes\\Views\\QuotePage\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\QuotePage\\Edit.cshtml",
-              "RelativeToolTip": "Opinion-on-Quotes\\Views\\QuotePage\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-06T01:02:46.145Z",
+              "DocumentIndex": 3,
+              "Title": "Quote.cs",
+              "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Models\\Quote.cs",
+              "RelativeDocumentMoniker": "Opinion-on-Quotes\\Models\\Quote.cs",
+              "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Models\\Quote.cs",
+              "RelativeToolTip": "Opinion-on-Quotes\\Models\\Quote.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwBAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T17:46:11.439Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\QuotePage\\Create.cshtml",
-              "RelativeDocumentMoniker": "Opinion-on-Quotes\\Views\\QuotePage\\Create.cshtml",
-              "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\QuotePage\\Create.cshtml",
-              "RelativeToolTip": "Opinion-on-Quotes\\Views\\QuotePage\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-06T01:02:28.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\QuotePage\\Index.cshtml",
-              "RelativeDocumentMoniker": "Opinion-on-Quotes\\Views\\QuotePage\\Index.cshtml",
-              "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Views\\QuotePage\\Index.cshtml",
-              "RelativeToolTip": "Opinion-on-Quotes\\Views\\QuotePage\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-06T01:00:48.184Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "QuoteService.cs",
               "DocumentMoniker": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Services\\QuoteService.cs",
               "RelativeDocumentMoniker": "Opinion-on-Quotes\\Services\\QuoteService.cs",
               "ToolTip": "C:\\Users\\it_fa\\OneDrive\\Humber WebDev\\Back-End-Web-Development-2-HTTP-5226-RNB\\Creative Collab\\Opinion-on-Quotes\\Opinion-on-Quotes\\Services\\QuoteService.cs",
               "RelativeToolTip": "Opinion-on-Quotes\\Services\\QuoteService.cs",
-              "ViewState": "AgIAAOgAAAAAAAAAAAAgwPoAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAowOAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T19:22:48.737Z",
+              "WhenOpened": "2025-08-10T17:42:15.973Z",
               "EditorCaption": ""
             }
           ]

@@ -52,8 +52,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVQYWdlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/it_fa/OneDrive/Humber WebDev/Back-End-Web-Development-2-HTTP-5226-RNB/Creative Collab/Opinion-on-Quotes/Opinion-on-Quotes/Views/QuotePage/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVQYWdlXERlbGV0ZS5jc2h0bWw=
+[C:/Users/it_fa/OneDrive/Humber WebDev/Back-End-Web-Development-2-HTTP-5226-RNB/Creative Collab/Opinion-on-Quotes/Opinion-on-Quotes/Views/QuotePage/DeleteConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVQYWdlXERlbGV0ZUNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/it_fa/OneDrive/Humber WebDev/Back-End-Web-Development-2-HTTP-5226-RNB/Creative Collab/Opinion-on-Quotes/Opinion-on-Quotes/Views/QuotePage/Details.cshtml]
@@ -64,8 +64,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVQYWdlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/it_fa/OneDrive/Humber WebDev/Back-End-Web-Development-2-HTTP-5226-RNB/Creative Collab/Opinion-on-Quotes/Opinion-on-Quotes/Views/QuotePage/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVQYWdlXEluZGV4LmNzaHRtbA==
+[C:/Users/it_fa/OneDrive/Humber WebDev/Back-End-Web-Development-2-HTTP-5226-RNB/Creative Collab/Opinion-on-Quotes/Opinion-on-Quotes/Views/QuotePage/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVQYWdlXExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/it_fa/OneDrive/Humber WebDev/Back-End-Web-Development-2-HTTP-5226-RNB/Creative Collab/Opinion-on-Quotes/Opinion-on-Quotes/Views/Shared/Error.cshtml]
